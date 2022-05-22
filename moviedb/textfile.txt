@@ -13,6 +13,7 @@ sqlite> insert into movies(name,actor,actress,director,released,movie_id)values(
 sqlite> insert into movies(name,actor,actress,director,released,movie_id)values('shersha','sidharth','kiara','gh','2020',103);
 sqlite> insert into movies(name,actor,actress,director,released,movie_id)values('abcd','varun','shraddha','ij','2018',104);
 sqlite> insert into movies(name,actor,actress,director,released,movie_id)values('ppaurvoh','kartik','ananya','kl','2011',105);
+
 sqlite> select*from movies;
 krish|hrithik|priyanka|ab|2012|100
 soty|varun|alia|cd|2016|101
@@ -20,7 +21,17 @@ barfi|ranbir|priyanka|ef|2014|102
 shersha|sidharth|kiara|gh|2020|103
 abcd|varun|shraddha|ij|2018|104
 ppaurvoh|kartik|ananya|kl|2011|105
+
 sqlite> select*from movies
    ...> where actor='varun';
 soty|varun|alia|cd|2016|101
 abcd|varun|shraddha|ij|2018|104
+
+sqlite> select*from movies
+   ...>where actress='kiara';
+shersha|sidharth|kiara|gh|2020|103
+
+sqlite> select*from movies
+   ...>where movie_id=104;
+abcd|varun|shraddha|ij|2018|104
+
